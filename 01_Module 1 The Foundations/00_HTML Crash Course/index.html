@@ -25,5 +25,20 @@
     (3.) You need to have the "https://" or you will not be going anywhere!
     -->
     <a href="https://frontendsimplified.com/discord" target="_blank">Discord Server</a>
+
+    <!-- Create a link that opens up dashboard in a new tab -->
+     <a href="dashboard.html" target="_blank">Dashboard opening in new tab</a>
+    <!-- 
+     (1.) "https://" is not needed because it is linking within the same website 
+     
+     (2.) It seems to work without typing forward slash (/) before the page link but I think that the forward slash triggers the autocomplete.
+
+     (3.) Because <a> is an inline tag that is why the two links are displayed right next to each other
+     -->
+    
+     <!--If I would have typed the forward slash then I would have had to select the full path because I have these multuple folders that is defining the file structure of this whole FES course instead of doing a separate repository for each lesson. Typing "/dashboard" gets me an error message! The following is an example of what I would have had to keep selecting in order to reach the file named "dashboard.html". Also I am wrapping it in a div so that it can be displayed on a new line-->
+     <div>
+        <a href="/01_Module 1 The Foundations/00_HTML Crash Course/dashboard.html" target="_blank">Other dashboard example because I typed a forward slash</a>
+     </div>
 </body>
 </html>
