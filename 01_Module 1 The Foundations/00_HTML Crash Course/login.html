@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Login</h1>
     <!-- With HTML a form can be created but you can't apply any logic to it meaning that you can't log a user in. To add functionality, you need Javascript -->
 
     <!-- action attribute has been removed because of reason stated above -->
-    <form >
+    <form>
+      <div>
         <label>Email</label>
         <!-- 
             (1.) The input tag is self closing 
             (2.) If you change the type attribute from text to email then it will check to see if your input is valid. If the attribute it password then it will display in the textbox as bullet points
         -->
-        <input type="email">
+        <input type="email" />
+      </div>
+      <div>
         <label>Password</label>
-        <input type="password">
-        <button>Submit</button>
+        <input type="password" />
+      </div>
+      <button>Submit</button>
     </form>
-</body>
+  </body>
 </html>
