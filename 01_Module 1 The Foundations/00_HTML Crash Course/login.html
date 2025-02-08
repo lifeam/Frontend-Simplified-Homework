@@ -11,18 +11,49 @@
 
     <!-- action attribute has been removed because of reason stated above -->
     <form>
+      <!--
+        (1.)Use a div tag when you want to group elements and/or style them differently
+        (2.)You don't want to use div tags for no reason because they do take up space in the DOM and causes the webpage to load slowly 
+        -->
       <div>
         <label>Email</label>
         <!-- 
-            (1.) The input tag is self closing 
-            (2.) If you change the type attribute from text to email then it will check to see if your input is valid. If the attribute it password then it will display in the textbox as bullet points
+            (1.) The <input> tag is self closing 
+            (2.) If you change the "type" attribute from text to email then it will check to see if your input is valid. If the attribute is password then it will display in the textbox as bullet points
+            (3.) Typing the "required" attribute in any of the <input> tags will make it a required input or you will not be able to submit the form
         -->
-        <input type="email" />
+        <input type="email" required />
       </div>
+      <hr />
+      <!--Used to create a horizontal line-->
       <div>
         <label>Password</label>
         <input type="password" />
       </div>
+      <hr />
+      <div>
+        <!-- With the <span> tag, I can target the span and change different things with this word. Like if I want to to multiple things like change the color and the boldness. All of this would be done in CSS but for right now he is demonstrating how you can at least look at it from changing properties within the Element Inspector 
+        -->
+        <label>Confirm <span>Password</span></label>
+        <input type="password" />
+      </div>
+      <hr />
+      <div>
+        <!-- <textarea> is not a self-closing tag so if it is not closed then you will see all of your code displayed on the page. -->
+        <label>Suggestions</label>
+        <textarea rows="3"></textarea>
+      </div>
+      <hr />
+      <div>
+        <label>Age</label>
+        <input type="number" />
+      </div>
+      <hr />
+      <div>
+        <label>Date</label>
+        <input type="date" />
+      </div>
+      <hr />
       <button>Submit</button>
     </form>
   </body>
