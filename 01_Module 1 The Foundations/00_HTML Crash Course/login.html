@@ -7,5 +7,19 @@
 </head>
 <body>
     <h1>Login</h1>
+    <!-- With HTML a form can be created but you can't apply any logic to it meaning that you can't log a user in. To add functionality, you need Javascript -->
+
+    <!-- action attribute has been removed because of reason stated above -->
+    <form >
+        <label>Email</label>
+        <!-- 
+            (1.) The input tag is self closing 
+            (2.) If you change the type attribute from text to email then it will check to see if your input is valid. If the attribute it password then it will display in the textbox as bullet points
+        -->
+        <input type="email">
+        <label>Password</label>
+        <input type="password">
+        <button>Submit</button>
+    </form>
 </body>
 </html>
